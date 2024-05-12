@@ -4,27 +4,45 @@
     <meta charset="UTF-8">
     <title>A.S. PORTFOLIO</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <link rel="my-styles" href="css/my-styles.css">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <!--<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">-->
+    <link rel="stylesheet" href="css/my-styles.css">
+    <script src="js/my-js.js"></script>
+    
+
+    <header class="w3-container w3-white">
+      <h3 style = "text-align:right;">
+      <nav>
+          <ul>
+              <li><a href="index.html">HOME</a></li>
+              <li><a href="gallery.html">GALLERY</a></li>
+              <li><a href="services.html">SERVICES</a></li>
+              <li><a href="about.html">ABOUT</a></li>
+              <li><a href="contact.html">CONTACT</a></li>
+          </ul>
+      </nav> 
+  </header>
 </head>
+
 
 <body>
 
-<header class="w3-container w3-grey">
-    <nav>
-        <ul>
-            <li><a href="index.html">HOME</a></li>
-            <li><a href="gallery.html">GALLERY</a></li>
-            <li><a href="services.html">SERVICES</a></li>
-            <li><a href="about.html">ABOUT</a></li>
-            <li><a href="contact.html">CONTACT</a></li>
-        </ul>
-    </nav> 
-</header>
 
-<img src="img_la.jpg" alt="LA" style="width:100%">
+<!--CARD FLIP: https://www.w3schools.com/howto/howto_css_flip_card.asp-->
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="assets/a.png" alt="Avatar" style="width:300px;height:300px;">
+    </div>
+    <div class="flip-card-back">
+      <h1>Angelina Santiago</h1> 
+      <p>Emerging Media Technologist</p> 
+      <p>Hello!</p>
+    </div>
+  </div>
+</div>
 
-<div class="">
+
+<div class="w3-container w3-white">
  <h1>WELCOME!</h1>
  <p>This is my portfolio webpage in which you'll find my works and concepts that I have worked on and 
     created throughout my college career. I have a degree in Emerging Media Technologies in which I 
@@ -32,40 +50,20 @@
 </p>
 </div>
 
+
+<!--DARK MODE: https://www.w3schools.com/howto/howto_js_toggle_dark_mode.asp-->
+<h2>Toggle Dark/Light Mode</h2>
+
+<button onclick="myFunction()">Toggle dark mode</button>
+
+
 <!--DATE AND TIME-->
-<h2>My First JavaScript</h2>
-<button type="button" onclick="document.getElementById('demo').innerHTML = Date()"> Click me to display Date and Time.</button>
+<button type="button" onclick="document.getElementById('demo').innerHTML = Date()"> Date & Time </button>
 <p id="demo"></p>
 
 <p id="cake"></p>
 
 
-<!--CARD FLIP: https://www.w3schools.com/howto/howto_css_flip_card.asp-->
-<div class="flip-card">
-    <div class="flip-card-inner">
-      <div class="flip-card-front">
-        <img src="img_avatar.png" alt="Avatar" style="width:300px;height:300px;">
-      </div>
-      <div class="flip-card-back">
-        <h1>ARTWORK</h1>
-        <p>This is an artwork.</p>
-        <p>2024</p>
-      </div>
-    </div>
-  </div>
-
-<!--DARK MODE: https://www.w3schools.com/howto/howto_js_toggle_dark_mode.asp-->
-<h2>Toggle Dark/Light Mode</h2>
-<p>Click the button to toggle between dark and light mode for this page.</p>
-
-<button onclick="myFunction()">Toggle dark mode</button>
-
-<script>
-function myFunction() {
-   var element = document.body;
-   element.classList.toggle("dark-mode");
-}
-</script>
 
 </body>
 </html>
