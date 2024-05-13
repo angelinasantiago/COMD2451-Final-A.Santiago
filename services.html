@@ -1,36 +1,70 @@
 <!DOCTYPE html>
+<html lang="en">
 <head> 
-    <html lang="en">
     <meta charset="UTF-8">
     <title>SERVICES</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <link rel="my-styles" href="css/my-styles.css">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <!--<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">-->
+    <link rel="stylesheet" href="css/my-styles.css">
+    <script src="js/my-js.js"></script>
+    
+
+    <header class="w3-container w3-white">
+      <nav>
+        <h3>
+          <ul>
+              <li><a href="index.html">HOME</a></li>
+              <li><a href="gallery.html">GALLERY</a></li>
+              <li><a href="services.html">SERVICES</a></li>
+              <li><a href="about.html">ABOUT</a></li>
+              <li><a href="contact.html">CONTACT</a></li>
+          </ul>
+      </nav> 
+  </header>
 </head>
-<style>
-</style>
-<script src=""></script>
+
+
 <body>
 
-<header class="w3-container w3-white">
-    <nav>
-        <ul>
-            <li><a href="index.html">HOME</a></li>
-            <li><a href="gallery.html">GALLERY</a></li>
-            <li><a href="services.html">SERVICES</a></li>
-            <li><a href="about.html">ABOUT</a></li>
-            <li><a href="contact.html">CONTACT</a></li>
-        </ul>
-    </nav> 
-</header>
 
-
-
-<div class="">
- <h1>This is a Heading</h1>
- <p>This is a paragraph.</p>
- <p>This is another paragraph.</p>
+<!--CARD FLIP: https://www.w3schools.com/howto/howto_css_flip_card.asp-->
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="assets/a.png" alt="Avatar" style="width:300px;height:300px;">
+    </div>
+    <div class="flip-card-back">
+      <h1>Angelina Santiago</h1> 
+      <p>Emerging Media Technologist</p> 
+      <p>Hello!</p>
+    </div>
+  </div>
 </div>
+
+<h1 style="text-align: center;"> ══════════════════ </h1>
+
+<div class="w3-container w3-white">
+ <h1>WELCOME!</h1>
+ <p>This is my portfolio webpage in which you'll find my works and concepts that I have worked on and 
+    created throughout my college career. I have a degree in Emerging Media Technologies in which I 
+    focused on Game Design and Interactive Media.
+</p>
+</div>
+
+
+<!--DARK MODE: https://www.w3schools.com/howto/howto_js_toggle_dark_mode.asp-->
+<button onclick="myFunction()">DARK/LIGHT MODE</button>
+
+
+<!--DATE AND TIME-->
+<float: center;>
+<button type="button" onclick="document.getElementById('demo').innerHTML = Date()"> DATE & TIME </button>
+<p id="demo"></p>
+
+<p id="cake"></p>
+
+
+
 
 </body>
 </html>
