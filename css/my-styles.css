@@ -11,22 +11,26 @@
             font-size: 25px;
           }
 
-          li a.active{
-            background-color: white;
-            color: black
-          }
-
           /* REMOVE BULLET POINTS */
           ul {
-            list-style-type: none;
+            list-style: none;
+            text-align: right;
+            display:inline-block;
+            float: right;
+            /*https://stackoverflow.com/questions/17989535/div-next-to-image*/
           }
 
-          /*NAV*/
-          li a{
+
+          /*NAV https://www.shecodes.io/athena/22112-how-to-display-a-list-horizontally-in-html-and-css#:~:text=To%20present%20a%20list%20horizontally%20instead%20of%20vertically%20in%20HTML,property%20on%20the%20list%20items.&text=This%20will%20display%20the%20bulleted,the%20value%20of%20margin-right%20*/
+          li {
+            display: inline-block;
+            margin-right: 10px; /* add spacing between items */
+          }
+
+          /*NAV TEXT: https://www.w3schools.com/html/html_lists_unordered.asp */
+          li a {
             display: block;
             color: black;
-            text-align: center;
-            padding: 29px 29px;
             text-decoration: none;
           }
 
@@ -39,6 +43,9 @@
             width: 300px;
             height: 300px;
             perspective: 1000px;
+            /*CENTER ALIGNMENT: https://blog.hubspot.com/website/center-an-image-in-html*/
+            display: block;
+            margin: auto;
           }
           
           .flip-card-inner {
@@ -64,12 +71,12 @@
           }
           
           .flip-card-front {
-            background-color: white;
-            color: white;
+            background-color: transparent;
+            color: transparent;
           }
           
           .flip-card-back {
-            background-color: white;
+            background-color: transparent;
             color: black;
             transform: rotateY(180deg);
           }
@@ -77,8 +84,8 @@
         /*---------------------------------------------- DARK MODE ----------------------------------------------*/
           
           .dark-mode {
-            background-color: black;
-            color: white;
+            background-color: gray;
+            color: black;
           }
 
         /*---------------------------------------------- CONTACT FORM ----------------------------------------------*/
