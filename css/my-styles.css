@@ -32,8 +32,69 @@
             display: block;
             color: black;
             text-decoration: none;
+            font-weight: 700;
           }
 
+          h1{
+          font-family: Arial, Helvetica, sans-serif;
+          font-weight: 700;
+          margin: 10px 0;
+          }
+
+          /*IMAGE GALLERY https://www.w3schools.com/howto/howto_js_image_grid.asp*/
+          .row {
+            display: -ms-flexbox; /* IE 10 */
+            display: flex;
+            -ms-flex-wrap: wrap; /* IE 10 */
+            flex-wrap: wrap;
+            padding: 0 4px;
+          }
+          
+          /* Create two equal columns that sits next to each other */
+          .column {
+            -ms-flex: 50%; /* IE 10 */
+            flex: 50%;
+            padding: 0 4px;
+          }
+          
+          .column img {
+            margin-top: 8px;
+            vertical-align: middle;
+            width: 100%;
+          }
+
+          .column-img-long{
+            height: 100%;
+          }
+
+          /*CENTER IMAGES FOR GALLERY*/
+          /* .center {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+          } */
+
+
+
+          /* VIDEO: https://stackoverflow.com/questions/8366957/how-to-center-an-iframe-horizontally */
+          iframe {
+            margin:auto;
+            display:block;
+          }
+
+          /* BUTTONS: https://www.w3schools.com/css/tryit.asp?filename=trycss_buttons_color */
+          .button {
+            background-color: #000000; /* Green */
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+          }
         /*---------------------------------------------- FLIP CARD ----------------------------------------------*/
 
         /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
