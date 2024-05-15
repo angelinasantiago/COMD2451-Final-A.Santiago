@@ -50,7 +50,6 @@
             padding: 0 4px;
           }
           
-          /* Create two equal columns that sits next to each other */
           .column {
             -ms-flex: 50%; /* IE 10 */
             flex: 50%;
@@ -74,7 +73,14 @@
             margin-right: auto;
           } */
 
-
+          /* GAME LINK BUTTON https://www.w3schools.com/howto/howto_js_toggle_hide_show.asp */
+          #myDIV {
+            width: 100%;
+            padding: 10px 0;
+            text-align: center;
+            margin-top: 20px;
+            display: none;
+          }
 
           /* VIDEO: https://stackoverflow.com/questions/8366957/how-to-center-an-iframe-horizontally */
           iframe {
@@ -96,8 +102,6 @@
             cursor: pointer;
           }
         /*---------------------------------------------- FLIP CARD ----------------------------------------------*/
-
-        /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
 
         .flip-card {
             background-color: transparent;
